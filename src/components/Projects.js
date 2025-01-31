@@ -1,4 +1,8 @@
 import styles from './Projects.module.css';
+import matchManiaGif from '../assets/images/matchManiaDemo.gif';
+import ticTacToeGif from '../assets/images/ticTacToeDemo.gif';
+import qCardsGif from '../assets/images/qCardsDemo.gif';
+import agilePokerImg from '../assets/images/agilePokerDemo.webp';
 
 export default function Projects() {
     return (
@@ -47,7 +51,7 @@ export default function Projects() {
                     </div>
                     <div className={styles.projectImg}>
                         <img
-                            src='/images/matchmania-demo.gif'
+                            src={matchManiaGif}
                             alt='Match Mania Preview'
                             className={styles.projectGif}
                         />
@@ -57,7 +61,7 @@ export default function Projects() {
                 <div className={styles.project}>
                     <div className={styles.projectImg}>
                         <img
-                            src='/images/tictactoe-demo.gif'
+                            src={ticTacToeGif}
                             alt='Tic-Tac-Toe Preview'
                             className={styles.projectGif}
                         />
@@ -147,7 +151,7 @@ export default function Projects() {
                     </div>
                     <div className={styles.projectImg}>
                         <img
-                            src='/images/qcards-demo.gif'
+                            src={qCardsGif}
                             alt='Q Cards Preview'
                             className={styles.projectGif}
                         />
@@ -156,7 +160,7 @@ export default function Projects() {
                 <div className={styles.project}>
                     <div className={styles.projectImg}>
                         <img
-                            src='/images/agilepoker-demo.webp'
+                            src={agilePokerImg}
                             alt='Agile Poker Preview'
                             className={styles.projectGif}
                         />
