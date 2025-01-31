@@ -2,7 +2,7 @@ import styles from './Projects.module.css';
 
 export default function Projects() {
     return (
-        <section className='container'>
+        <section className={`${styles.sectionProjects} container`}>
             <h1 className={styles.sectionTitle}>Projects</h1>
             <div className={styles.projects}>
                 <div className={styles.project}>
@@ -26,8 +26,20 @@ export default function Projects() {
                                 display Pokémon data.
                             </li>
                             <li>
-                                <a href='https://matchmania.io/'>Live Demo</a> |{' '}
-                                <a href='https://github.com/CorHandikaSawai/MatchMania'>
+                                {' '}
+                                <a
+                                    href='https://matchmania.io/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    Live Demo
+                                </a>{' '}
+                                |{' '}
+                                <a
+                                    href='https://github.com/CorHandikaSawai/MatchMania'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
                                     GitHub Repo
                                 </a>
                             </li>
@@ -41,14 +53,55 @@ export default function Projects() {
                         />
                     </div>
                 </div>
+
                 <div className={styles.project}>
                     <div className={styles.projectImg}>
                         <img
-                            src='/images/qcards-demo.gif'
-                            alt='Q Cards Preview'
+                            src='/images/tictactoe-demo.gif'
+                            alt='Tic-Tac-Toe Preview'
                             className={styles.projectGif}
                         />
                     </div>
+                    <div className={styles.projectDesc}>
+                        <h2>Tic-Tac-Toe</h2>
+                        <p className={styles.sectionParagraph}>
+                            A modern take on the classic game, built with
+                            React.js for an interactive and dynamic experience.
+                        </p>
+                        <ul>
+                            <li>
+                                Designed a clean and responsive UI for a smooth
+                                player experience.
+                            </li>
+                            <li>
+                                Implemented state management using React hooks
+                                for efficient game logic.
+                            </li>
+                            <li>
+                                Supports two-player mode for local gameplay.
+                            </li>
+                            <li>
+                                {' '}
+                                <a
+                                    href='https://corhandikasawai.github.io/tic-tac-toe/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    Live Demo
+                                </a>{' '}
+                                |{' '}
+                                <a
+                                    href='https://github.com/CorHandikaSawai//tic-tac-toe'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    GitHub Repo
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className={styles.project}>
                     <div className={styles.projectDesc}>
                         <h2>QCards</h2>
                         <p className={styles.sectionParagraph}>
@@ -74,43 +127,19 @@ export default function Projects() {
                             </li>
                             <li>
                                 {' '}
-                                <a href='https://qcards.arcsos.com'>
+                                <a
+                                    href='https://qcards.arcsos.com'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
                                     Live Demo
                                 </a>{' '}
                                 |{' '}
-                                <a href='https://github.com/CorHandikaSawai/QCards'>
-                                    GitHub Repo
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className={styles.project}>
-                    <div className={styles.projectDesc}>
-                        <h2>Tic-Tac-Toe</h2>
-                        <p className={styles.sectionParagraph}>
-                            A modern take on the classic game, built with
-                            React.js for an interactive and dynamic experience.
-                        </p>
-                        <ul>
-                            <li>
-                                Designed a clean and responsive UI for a smooth
-                                player experience.
-                            </li>
-                            <li>
-                                Implemented state management using React hooks
-                                for efficient game logic.
-                            </li>
-                            <li>
-                                Supports two-player mode for local gameplay.
-                            </li>
-                            <li>
-                                {' '}
-                                <a href='https://corhandikasawai.github.io/tic-tac-toe/'>
-                                    Live Demo
-                                </a>{' '}
-                                |{' '}
-                                <a href='https://github.com/CorHandikaSawai//tic-tac-toe'>
+                                <a
+                                    href='https://github.com/CorHandikaSawai/QCards'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
                                     GitHub Repo
                                 </a>
                             </li>
@@ -118,8 +147,8 @@ export default function Projects() {
                     </div>
                     <div className={styles.projectImg}>
                         <img
-                            src='/images/tictactoe-demo.gif'
-                            alt='Tic-Tac-Toe Preview'
+                            src='/images/qcards-demo.gif'
+                            alt='Q Cards Preview'
                             className={styles.projectGif}
                         />
                     </div>

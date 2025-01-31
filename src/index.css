@@ -10,7 +10,6 @@ html,
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: #121212; /* Dark theme */
     color: #ffffff; /* Light text for contrast */
     display: flex;
     flex-direction: column;
@@ -60,4 +59,8 @@ ul li::before {
     max-width: 1440px;
     margin: 0 auto;
     padding: 20px;
+}
+
+main {
+    background-color: black;
 }

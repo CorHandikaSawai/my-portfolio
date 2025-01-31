@@ -1,6 +1,24 @@
 .sectionAbout {
     display: flex;
     flex-direction: column;
+    padding-top: 8rem;
+}
+
+.sectionAbout h1 {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center; /* Centers the title */
+}
+
+.sectionAbout h1::after {
+    content: '';
+    display: block;
+    width: 80px; /* Adjust the underline width */
+    height: 4px; /* Thickness */
+    background-color: #0f0; /* Green color */
+    margin: 8px auto 0; /* Adds spacing and centers it */
+    border-radius: 2px; /* Optional: rounded edges */
 }
 
 .whoAmI {
