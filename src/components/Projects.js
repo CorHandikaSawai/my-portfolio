@@ -41,14 +41,47 @@ export default function Projects() {
                         />
                     </div>
                 </div>
+
                 <div className={styles.project}>
                     <div className={styles.projectImg}>
                         <img
-                            src='/images/qcards-demo.gif'
-                            alt='Q Cards Preview'
+                            src='/images/tictactoe-demo.gif'
+                            alt='Tic-Tac-Toe Preview'
                             className={styles.projectGif}
                         />
                     </div>
+                    <div className={styles.projectDesc}>
+                        <h2>Tic-Tac-Toe</h2>
+                        <p className={styles.sectionParagraph}>
+                            A modern take on the classic game, built with
+                            React.js for an interactive and dynamic experience.
+                        </p>
+                        <ul>
+                            <li>
+                                Designed a clean and responsive UI for a smooth
+                                player experience.
+                            </li>
+                            <li>
+                                Implemented state management using React hooks
+                                for efficient game logic.
+                            </li>
+                            <li>
+                                Supports two-player mode for local gameplay.
+                            </li>
+                            <li>
+                                {' '}
+                                <a href='https://corhandikasawai.github.io/tic-tac-toe/'>
+                                    Live Demo
+                                </a>{' '}
+                                |{' '}
+                                <a href='https://github.com/CorHandikaSawai//tic-tac-toe'>
+                                    GitHub Repo
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className={styles.project}>
                     <div className={styles.projectDesc}>
                         <h2>QCards</h2>
                         <p className={styles.sectionParagraph}>
@@ -84,42 +117,10 @@ export default function Projects() {
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div className={styles.project}>
-                    <div className={styles.projectDesc}>
-                        <h2>Tic-Tac-Toe</h2>
-                        <p className={styles.sectionParagraph}>
-                            A modern take on the classic game, built with
-                            React.js for an interactive and dynamic experience.
-                        </p>
-                        <ul>
-                            <li>
-                                Designed a clean and responsive UI for a smooth
-                                player experience.
-                            </li>
-                            <li>
-                                Implemented state management using React hooks
-                                for efficient game logic.
-                            </li>
-                            <li>
-                                Supports two-player mode for local gameplay.
-                            </li>
-                            <li>
-                                {' '}
-                                <a href='https://corhandikasawai.github.io/tic-tac-toe/'>
-                                    Live Demo
-                                </a>{' '}
-                                |{' '}
-                                <a href='https://github.com/CorHandikaSawai//tic-tac-toe'>
-                                    GitHub Repo
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                     <div className={styles.projectImg}>
                         <img
-                            src='/images/tictactoe-demo.gif'
-                            alt='Tic-Tac-Toe Preview'
+                            src='/images/qcards-demo.gif'
+                            alt='Q Cards Preview'
                             className={styles.projectGif}
                         />
                     </div>
