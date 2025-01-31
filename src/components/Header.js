@@ -10,6 +10,7 @@ export default function Header() {
     const [glitch, setGlitch] = useState(false);
     const canvasRef = useRef(null);
     const headerRef = useRef(null);
+    const mousePos = useRef({ x: -999, y: -999 }); // Default position (hidden)
 
     useEffect(() => {
         let typingSpeed = isDeleting ? 50 : 100;
@@ -65,16 +66,31 @@ export default function Header() {
         const drops = Array(columns).fill(1);
 
         const drawMatrix = () => {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.1)'; // Dark overlay to fade old numbers
             ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = '#0F0';
             ctx.font = '16px monospace';
 
             drops.forEach((y, x) => {
                 const text = characters.charAt(
                     Math.floor(Math.random() * characters.length)
                 );
-                ctx.fillText(text, x * 15, y * 15);
+                const posX = x * 15;
+                const posY = y * 15;
+
+                // Calculate distance from mouse
+                const dx = posX - mousePos.current.x;
+                const dy = posY - mousePos.current.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                // Opacity logic: Brighter near the cursor, dim further away
+                let opacity = 0.1; // Default hidden state
+                if (distance < 100) opacity = 1; // Fully visible near cursor
+                else if (distance < 200) opacity = 0.5; // Partially visible
+
+                ctx.fillStyle = `rgba(0, 255, 0, ${opacity})`; // Green matrix numbers
+                ctx.fillText(text, posX, posY);
+
+                // Reset when reaching bottom or randomly
                 if (y * 15 > canvas.height || Math.random() > 0.975)
                     drops[x] = 0;
                 drops[x]++;
@@ -86,11 +102,10 @@ export default function Header() {
         const handleMouseMove = (event) => {
             if (!headerRef.current) return;
             const rect = headerRef.current.getBoundingClientRect();
-            if (event.clientY >= rect.top && event.clientY <= rect.bottom) {
-                const speedFactor = (event.clientX - rect.left) / rect.width;
-                clearInterval(interval);
-                interval = setInterval(drawMatrix, 30 + speedFactor * 50);
-            }
+            mousePos.current = {
+                x: event.clientX - rect.left,
+                y: event.clientY - rect.top,
+            };
         };
 
         window.addEventListener('mousemove', handleMouseMove);

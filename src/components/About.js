@@ -35,6 +35,7 @@ export default function About() {
                     </p>
                     <ul>
                         <li>Software Engineering</li>
+                        <li>Network Engineering</li>
                         <li>Cloud Development & DevOps</li>
                         <li>Cybersecurity & Secure Software Development</li>
                     </ul>

@@ -1,6 +1,7 @@
-.sectionAbout {
+.sectionProjects {
     display: flex;
     flex-direction: column;
+    padding-top: 8rem;
 }
 
 .whoAmI {
