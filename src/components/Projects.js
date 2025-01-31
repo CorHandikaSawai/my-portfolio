@@ -26,8 +26,20 @@ export default function Projects() {
                                 display Pokémon data.
                             </li>
                             <li>
-                                <a href='https://matchmania.io/'>Live Demo</a> |{' '}
-                                <a href='https://github.com/CorHandikaSawai/MatchMania'>
+                                {' '}
+                                <a
+                                    href='https://matchmania.io/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    Live Demo
+                                </a>{' '}
+                                |{' '}
+                                <a
+                                    href='https://github.com/CorHandikaSawai/MatchMania'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
                                     GitHub Repo
                                 </a>
                             </li>
@@ -70,11 +82,19 @@ export default function Projects() {
                             </li>
                             <li>
                                 {' '}
-                                <a href='https://corhandikasawai.github.io/tic-tac-toe/'>
+                                <a
+                                    href='https://corhandikasawai.github.io/tic-tac-toe/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
                                     Live Demo
                                 </a>{' '}
                                 |{' '}
-                                <a href='https://github.com/CorHandikaSawai//tic-tac-toe'>
+                                <a
+                                    href='https://github.com/CorHandikaSawai//tic-tac-toe'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
                                     GitHub Repo
                                 </a>
                             </li>
@@ -107,11 +127,19 @@ export default function Projects() {
                             </li>
                             <li>
                                 {' '}
-                                <a href='https://qcards.arcsos.com'>
+                                <a
+                                    href='https://qcards.arcsos.com'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
                                     Live Demo
                                 </a>{' '}
                                 |{' '}
-                                <a href='https://github.com/CorHandikaSawai/QCards'>
+                                <a
+                                    href='https://github.com/CorHandikaSawai/QCards'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
                                     GitHub Repo
                                 </a>
                             </li>
