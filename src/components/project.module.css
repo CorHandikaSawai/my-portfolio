@@ -1,0 +1,26 @@
+.project {
+    padding-bottom: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.project li {
+    margin-bottom: 0.5rem;
+}
+
+.projectDesc {
+    flex: 1;
+}
+
+.projectImg {
+    background-color: wheat;
+    flex: 1;
+}
+
+.projectImg img {
+    width: 100%;
+}

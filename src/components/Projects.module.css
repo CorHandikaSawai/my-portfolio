@@ -44,29 +44,6 @@
     display: flex;
 }
 
-.project {
-    padding-bottom: 3rem;
-    display: flex;
-    gap: 1rem;
-}
-
-.project li {
-    margin-bottom: 0.5rem;
-}
-
-.projectDesc {
-    flex: 1;
-}
-
-.projectImg {
-    background-color: wheat;
-    flex: 1;
-}
-
-.projectImg img {
-    width: 100%;
-}
-
 .projects {
     display: flex;
     flex-direction: column;
