@@ -53,7 +53,7 @@ export const PROJECTS = [
             'Uses Firebase for storage to save and retrieve flashcards.',
             'Lightweight and mobile-friendly UI built with Flutter.',
         ],
-        demoLink: 'https:/qcards.arcsos.com',
+        demoLink: 'https://qcards.arcsos.com',
         githubLink: 'https://github.com/CorHandikaSawai/QCards',
         imgSrc: qCardsGif,
     },
