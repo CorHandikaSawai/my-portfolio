@@ -2,25 +2,114 @@
     padding-bottom: 3rem;
     display: flex;
     gap: 2rem;
+    width: 75%;
 }
 
-.reversed {
-    flex-direction: row-reverse;
+.projectName {
+    margin-bottom: 1.25rem;
 }
 
-.project li {
-    margin-bottom: 0.5rem;
+/* Section Paragraph */
+.sectionParagraph {
+    padding-bottom: 0.5rem;
+    font-size: 1.25rem;
 }
 
 .projectDesc {
-    flex: 1;
+    font-size: 1.25rem;
+    flex: 2;
+}
+
+.project ul {
+    padding-left: 1.25rem;
+    list-style-type: disc;
+}
+
+.project li {
+    font-size: 1.25rem;
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .projectImg {
-    background-color: wheat;
     flex: 1;
+    display: flex;
 }
 
 .projectImg img {
     width: 100%;
+    height: auto;
+}
+
+/* 🖥 Desktop (Default) */
+@media (max-width: 1600px) {
+    .projectDesc h2 {
+        font-size: 1.5rem;
+    }
+
+    .project {
+        flex-wrap: wrap;
+    }
+}
+
+/* 📱 Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    .project {
+        flex-direction: column-reverse;
+    }
+
+    .projectImg {
+        justify-content: center;
+    }
+
+    .projectImg img {
+        width: 75%;
+    }
+}
+
+/* 📱 Large Phones (768px and below) */
+@media (max-width: 768px) {
+    .sectionAbout h1 {
+        font-size: 1.75rem;
+    }
+
+    .sectionAbout h1::after {
+        width: 50px;
+        height: 2px;
+    }
+
+    .sectionTitle {
+        margin-bottom: 4rem;
+    }
+
+    .sectionSubtitle {
+        margin-bottom: 1.5rem;
+    }
+
+    .sectionContent {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .sectionTitle {
+        margin-bottom: 3rem;
+    }
+
+    .sectionSubtitle {
+        margin-bottom: 1rem;
+    }
+
+    .sectionParagraph {
+        padding-bottom: 0.25rem;
+        font-size: 1rem;
+    }
+
+    .project ul {
+        padding-left: 1rem;
+    }
+
+    .project li {
+        padding-left: 0.5rem;
+        font-size: 1rem;
+    }
 }

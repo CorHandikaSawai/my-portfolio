@@ -1,11 +1,13 @@
 .sectionProjects {
     display: flex;
     flex-direction: column;
+    margin-top: 16rem;
+    width: 75%;
 }
 
 .sectionProjects h1 {
     position: relative;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center; /* Centers the title */
 }
@@ -20,31 +22,47 @@
     border-radius: 2px; /* Optional: rounded edges */
 }
 
-.whoAmI {
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-}
-
 .sectionTitle {
     margin-bottom: 8rem;
     text-align: center;
 }
 
-.sectionSubtitle {
-    margin-bottom: 2rem;
-}
-
-.sectionParagraph {
-    padding-bottom: 0.5rem;
-}
-
-.sectionContent {
-    display: flex;
-}
-
 .projects {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 8rem;
+}
+
+/* 🖥 Desktop (Default) */
+@media (max-width: 1600px) {
+    .sectionProjects h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* 📱 Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    .sectionProjects {
+        margin-top: 8rem;
+    }
+
+    .sectionProjects h1 {
+        font-size: 2rem;
+    }
+}
+
+/* 📱 Large Phones (768px and below) */
+@media (max-width: 768px) {
+    .sectionProjects h1 {
+        font-size: 1.75rem;
+    }
+
+    .sectionTitle {
+        margin-bottom: 3rem;
+    }
+
+    .sectionSubtitle {
+        margin-bottom: 1rem;
+    }
 }

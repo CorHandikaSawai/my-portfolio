@@ -7,15 +7,12 @@ export default function Project({
     demoLink,
     githubLink,
     imgSrc,
-    isReversed,
 }) {
     console.log(details);
     return (
-        <div
-            className={`${styles.project} ${isReversed ? styles.reversed : ''}`}
-        >
+        <div className={styles.project}>
             <div className={styles.projectDesc}>
-                <h2>{name}</h2>
+                <h2 className={styles.projectName}>{name}</h2>
                 <p className={styles.sectionParagraph}>{shortDesc}</p>
                 <ul>
                     {details.map((detail, key) => (

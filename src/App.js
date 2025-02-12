@@ -9,7 +9,7 @@ function App() {
             <Header />
             <main id='main-content'>
                 <About />
-                {/* <Projects /> */}
+                <Projects />
             </main>
         </>
     );
