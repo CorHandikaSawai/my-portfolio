@@ -44,7 +44,7 @@
 /* 📱 Tablets (1024px and below) */
 @media (max-width: 1024px) {
     .sectionProjects {
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     .sectionProjects h1 {
@@ -64,5 +64,20 @@
 
     .sectionSubtitle {
         margin-bottom: 1rem;
+    }
+
+    .projects {
+        gap: 1rem;
+    }
+}
+
+/* 📱 Large Phones (480px and below) */
+@media (max-width: 480px) {
+    .sectionProjects h1 {
+        font-size: 1.5rem;
+    }
+
+    .sectionSubtitle {
+        margin-bottom: 1.25rem;
     }
 }

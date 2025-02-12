@@ -91,7 +91,7 @@
 /* 📱 Tablets (1024px and below) */
 @media (max-width: 1024px) {
     .sectionAbout {
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     .sectionAbout h1 {

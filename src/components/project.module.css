@@ -2,7 +2,6 @@
     padding-bottom: 3rem;
     display: flex;
     gap: 2rem;
-    width: 75%;
 }
 
 .projectName {
@@ -16,7 +15,6 @@
 }
 
 .projectDesc {
-    font-size: 1.25rem;
     flex: 2;
 }
 
@@ -43,8 +41,8 @@
 
 /* 🖥 Desktop (Default) */
 @media (max-width: 1600px) {
-    .projectDesc h2 {
-        font-size: 1.5rem;
+    .projectDesc {
+        font-size: 1.25rem;
     }
 
     .project {
@@ -69,34 +67,12 @@
 
 /* 📱 Large Phones (768px and below) */
 @media (max-width: 768px) {
-    .sectionAbout h1 {
-        font-size: 1.75rem;
-    }
-
-    .sectionAbout h1::after {
-        width: 50px;
-        height: 2px;
-    }
-
     .sectionTitle {
         margin-bottom: 4rem;
     }
 
-    .sectionSubtitle {
-        margin-bottom: 1.5rem;
-    }
-
-    .sectionContent {
-        flex-direction: column-reverse;
-        gap: 1rem;
-    }
-
     .sectionTitle {
         margin-bottom: 3rem;
-    }
-
-    .sectionSubtitle {
-        margin-bottom: 1rem;
     }
 
     .sectionParagraph {
@@ -111,5 +87,12 @@
     .project li {
         padding-left: 0.5rem;
         font-size: 1rem;
+    }
+}
+
+/* 📱 Small Phones (480px and below) */
+@media (max-width: 480px) {
+    .projectName {
+        font-size: 1.25rem;
     }
 }
