@@ -1,7 +1,7 @@
 .sectionProjects {
     display: flex;
     flex-direction: column;
-    margin-top: 16rem;
+    margin-top: 8rem;
     width: 75%;
 }
 
@@ -44,7 +44,7 @@
 /* 📱 Tablets (1024px and below) */
 @media (max-width: 1024px) {
     .sectionProjects {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
 
     .sectionProjects h1 {

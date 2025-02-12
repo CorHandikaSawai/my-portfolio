@@ -2,7 +2,7 @@
 .sectionAbout {
     display: flex;
     flex-direction: column;
-    margin-top: 16rem;
+    margin-top: 8rem;
     width: 75%;
 }
 
@@ -91,7 +91,7 @@
 /* 📱 Tablets (1024px and below) */
 @media (max-width: 1024px) {
     .sectionAbout {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
 
     .sectionAbout h1 {
@@ -167,10 +167,6 @@
 
 /* 📱 Small Phones (480px and below) */
 @media (max-width: 480px) {
-    .sectionAbout {
-        padding-top: 4rem;
-    }
-
     .sectionAbout h1 {
         font-size: 1.5rem;
     }
