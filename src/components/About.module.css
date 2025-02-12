@@ -82,6 +82,10 @@
     .sectionContent img {
         width: 600px;
     }
+
+    .sectionContent img {
+        width: 500px;
+    }
 }
 
 /* 📱 Tablets (1024px and below) */
@@ -141,6 +145,28 @@
         flex-direction: column-reverse;
         gap: 1rem;
     }
+
+    .sectionTitle {
+        margin-bottom: 3rem;
+    }
+
+    .sectionSubtitle {
+        margin-bottom: 1rem;
+    }
+
+    .sectionParagraph {
+        padding-bottom: 0.25rem;
+        font-size: 1rem;
+    }
+
+    .sectionList {
+        padding-left: 1rem;
+    }
+
+    .sectionList li {
+        padding-left: 0.5rem;
+        font-size: 1rem;
+    }
 }
 
 /* 📱 Small Phones (480px and below) */
@@ -153,21 +179,13 @@
         font-size: 1.5rem;
     }
 
+    .sectionAbout h2 {
+        font-size: 1.25rem;
+    }
+
     .sectionAbout h1::after {
         width: 40px;
         height: 2px;
-    }
-
-    .sectionTitle {
-        margin-bottom: 3rem;
-    }
-
-    .sectionSubtitle {
-        margin-bottom: 1rem;
-    }
-
-    .sectionParagraph {
-        padding-bottom: 0.25rem;
     }
 
     .sectionContent {
