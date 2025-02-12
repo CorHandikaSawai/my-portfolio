@@ -7,9 +7,9 @@ function App() {
     return (
         <>
             <Header />
-            <main>
+            <main id='main-content'>
                 <About />
-                <Projects />
+                {/* <Projects /> */}
             </main>
         </>
     );

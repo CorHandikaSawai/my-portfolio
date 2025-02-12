@@ -1,0 +1,7 @@
+📱 Small Phones	320px - 480px	@media (max-width: 480px)
+📱 Medium Phones	481px - 640px	@media (max-width: 640px)
+📱 Large Phones / Small Tablets	641px - 768px	@media (max-width: 768px)
+📱 Tablets	769px - 1024px	@media (max-width: 1024px)
+🖥 Small Laptops	1025px - 1280px	@media (max-width: 1280px)
+🖥 Desktops & Large Screens	1281px - 1600px	@media (max-width: 1600px)
+🖥 Ultra-Wide Screens	1601px+	@media (min-width: 1601px)

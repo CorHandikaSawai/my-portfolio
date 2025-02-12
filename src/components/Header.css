@@ -47,7 +47,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Keep behind text */
     background: transparent;
 }
 
@@ -56,10 +55,59 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 60vh;
     width: 100vw;
+    gap: 2rem;
+    color: white;
+}
+
+/* Base Styles */
+#landing-header h1 {
+    z-index: 1;
+    font-size: 3rem;
 }
 
 #landing-header h2 {
-    padding-top: 2rem;
+    z-index: 1;
+    font-size: 2.5rem;
+}
+
+/* Laptop & Smaller Screens */
+@media (max-width: 1600px) {
+    #landing-header h1 {
+        font-size: 2.5rem;
+    }
+    #landing-header h2 {
+        font-size: 2.25rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    #landing-header h1 {
+        font-size: 2rem;
+    }
+    #landing-header h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Large Phones */
+@media (max-width: 768px) {
+    #landing-header h1 {
+        font-size: 1.75rem;
+    }
+    #landing-header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    #landing-header h1 {
+        font-size: 1.5rem;
+    }
+    #landing-header h2 {
+        font-size: 1.25rem;
+    }
 }

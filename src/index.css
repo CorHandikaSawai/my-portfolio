@@ -1,3 +1,4 @@
+/* Reset & Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +11,8 @@ html,
 body {
     width: 100%;
     min-height: 100vh;
-    color: #ffffff; /* Light text for contrast */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: white;
+    background-color: black;
 }
 
 /* Typography */
@@ -27,40 +26,7 @@ h6 {
     text-transform: capitalize;
 }
 
-h1 {
-    font-size: 2.5rem;
-}
-h2 {
-    font-size: 2rem;
-}
-h3 {
-    font-size: 1.75rem;
-}
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #b0b0b0; /* Slightly softer than white */
-}
-
+/* List Styling */
 ul {
     list-style: none;
-}
-
-ul li::before {
-    content: '•'; /* Custom bullet */
-    color: #ffcc00; /* Change color */
-    font-size: 1.2em; /* Adjust size */
-    margin-right: 10px;
-}
-
-/* Global Layout */
-.container {
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-main {
-    background-color: black;
 }

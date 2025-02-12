@@ -6,39 +6,49 @@ export default function About() {
         <section className={`${styles.sectionAbout} container`}>
             <h1 className={styles.sectionTitle}>About</h1>
             <div className={styles.sectionContent}>
-                <div>
-                    <h2 className={styles.sectionSubtitle}>Who Am I?</h2>
-                    <p className={styles.sectionParagraph}>
-                        I'm a Software Engineer with a background in software
-                        development, cloud computing, and cybersecurity. I have
-                        experience designing, developing, and maintaining
-                        software applications while collaborating with
-                        cross-functional teams.
-                    </p>
-                    <p className={styles.sectionParagraph}>
-                        Proficient in Java, Python, JavaScript, and Dart, I work
-                        with frameworks like React, Flutter, Flask, and Node.js,
-                        and have hands-on experience with AWS, Google Cloud, and
-                        Firestore. My AWS and Salesforce certifications
-                        highlight my ability to build cloud-native applications
-                        and enterprise solutions.
-                    </p>
-                    <p className={styles.sectionParagraph}>
-                        I also have background in cybersecurity, with a
-                        Bachelor's in Cybersecurity and am currently pursuing a
-                        Master's in Cybersecurity Engineering. I am familiar
-                        with networking concepts and always looking to integrate
-                        security best practices into development.
-                    </p>
-                    <p className={styles.sectionParagraph}>
-                        I'm looking for opportunities in:
-                    </p>
-                    <ul>
-                        <li>Software Engineering</li>
-                        <li>Network Engineering</li>
-                        <li>Cloud Development & DevOps</li>
-                        <li>Cybersecurity & Secure Software Development</li>
-                    </ul>
+                <div className={styles.sectionContentTexts}>
+                    <div>
+                        <h2 className={styles.sectionSubtitle}>Who Am I?</h2>
+                        <p className={styles.sectionParagraph}>
+                            Hey there! I'm Cor, a Software Engineer with a
+                            passion for building things that work, scale, and
+                            make life easier. I love turning ideas into clean,
+                            functional, and secure applications—whether it's a
+                            sleek web app, a cloud-based system, or a
+                            security-focused solution.
+                        </p>
+                        <p className={styles.sectionParagraph}>
+                            I’m fluent in Java, Python, JavaScript, and Dart,
+                            and I work with frameworks like React, Flutter,
+                            Flask, and Node.js. You’ll often find me exploring
+                            AWS, Google Cloud, and Firestore, always looking for
+                            ways to optimize and automate.
+                        </p>
+                        <p className={styles.sectionParagraph}>
+                            Beyond coding, I have a strong cybersecurity
+                            background—my Bachelor’s is in Cybersecurity, and
+                            I’m currently diving even deeper with a Master’s in
+                            Cybersecurity Engineering. I enjoy blending security
+                            best practices into development because, let’s face
+                            it, no one wants to be the reason a system gets
+                            hacked! 😅
+                        </p>
+                    </div>
+                    <div>
+                        <h2 className={styles.sectionSubtitle}>
+                            What I’m Looking For
+                        </h2>
+                        <p className={styles.sectionParagraph}>
+                            I thrive in roles where I can build, solve, and
+                            grow—whether that’s in:
+                        </p>
+                        <ul className={styles.sectionList}>
+                            <li>Software Engineering</li>
+                            <li>Network Engineering</li>
+                            <li>Cloud Development & DevOps</li>
+                            <li>Cybersecurity & Secure Software Development</li>
+                        </ul>
+                    </div>
                 </div>
                 <div>
                     <img src={profileImg} alt='profile' />
