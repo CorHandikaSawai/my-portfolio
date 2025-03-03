@@ -2,6 +2,7 @@ import matchManiaGif from '../assets/images/matchManiaDemo.gif';
 import ticTacToeGif from '../assets/images/ticTacToeDemo.gif';
 import qCardsGif from '../assets/images/qCardsDemo.gif';
 import agilePokerImg from '../assets/images/agilePokerDemo.webp';
+import leonCasinoGif from '../assets/images/leonCasino.gif';
 
 export const PROJECTS = [
     {
@@ -19,17 +20,21 @@ export const PROJECTS = [
         imgSrc: agilePokerImg,
     },
     {
-        name: 'MatchMania',
+        name: 'Leon Casino',
         shortDesc:
-            'A fun, interactive matching game built using React.js and the Pokédex API.',
+            'A visually engaging online casino landing page featuring interactive elements and dynamic content.',
         details: [
-            'Designed an engaging UI for a seamless user experience.',
-            'Implemented state management for efficient game logic.',
-            'Utilized REST API to dynamically fetch and display Pokémon data.',
+            'Designed and developed a responsive landing page for an online casino.',
+            'Implemented an animated hero slider with Alpine.js for smooth transitions.',
+            'Optimized performance by preloading assets and lazy-loading images.',
+            'Integrated theme switching (dark/light mode) with persistent local storage.',
+            'Enhanced UI with floating interactive elements for a dynamic experience.',
         ],
-        demoLink: 'https://matchmania.io/',
-        githubLink: 'https://github.com/CorHandikaSawai/MatchMania',
-        imgSrc: matchManiaGif,
+        demoLink:
+            'https://corhandikasawai.github.io/neo-group-landing-page-challenge/',
+        githubLink:
+            'https://github.com/CorHandikaSawai/neo-group-landing-page-challenge',
+        imgSrc: leonCasinoGif,
     },
     {
         name: 'Tic-Tac-Toe',
@@ -44,6 +49,20 @@ export const PROJECTS = [
         githubLink: 'https://github.com/CorHandikaSawai/tic-tac-toe',
         imgSrc: ticTacToeGif,
     },
+    {
+        name: 'MatchMania',
+        shortDesc:
+            'A fun, interactive matching game built using React.js and the Pokédex API.',
+        details: [
+            'Designed an engaging UI for a seamless user experience.',
+            'Implemented state management for efficient game logic.',
+            'Utilized REST API to dynamically fetch and display Pokémon data.',
+        ],
+        demoLink: 'https://matchmania.io/',
+        githubLink: 'https://github.com/CorHandikaSawai/MatchMania',
+        imgSrc: matchManiaGif,
+    },
+
     {
         name: 'QCards',
         shortDesc:
