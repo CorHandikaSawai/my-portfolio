@@ -8,7 +8,6 @@ export default function Project({
     githubLink,
     imgSrc,
 }) {
-    console.log(details);
     return (
         <div className={styles.project}>
             <div className={styles.projectDesc}>

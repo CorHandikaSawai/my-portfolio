@@ -10,9 +10,12 @@
 html,
 body {
     width: 100%;
-    min-height: 100vh;
-    color: white;
-    background-color: black;
+    height: 100%;
+}
+
+#root {
+    width: 500px;
+    height: 500px;
 }
 
 /* Typography */
