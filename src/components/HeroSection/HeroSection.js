@@ -42,9 +42,9 @@ const HeroSection = () => {
             </div>
 
             <div className={styles.container}>
-                <div className={styles.content}>
+                {/* <div className={styles.content}>
                     <img src={profilePic} alt='ProfilePicture' />
-                </div>
+                </div> */}
                 <div className={styles.content}>
                     <p className={styles.welcomeText}>
                         WELCOME TO MY PORTFOLIO
