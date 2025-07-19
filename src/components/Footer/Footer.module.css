@@ -1,0 +1,100 @@
+.footer {
+    border-top: 1px solid #1f2937;
+    padding: 2rem 0;
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+    }
+}
+
+.logoWrapper {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .logoWrapper {
+        margin-bottom: 0;
+    }
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #22d3ee;
+    text-decoration: none;
+}
+
+.logoAccent {
+    color: #ffffff;
+}
+
+.copyright {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.separator {
+    margin: 0 0.5rem;
+}
+
+.madeWith {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.heartIcon {
+    color: #ef4444;
+    margin: 0 0.25rem;
+}
+
+.navigation {
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        margin-top: 0;
+    }
+}
+
+.navList {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navLink {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: #22d3ee;
+}

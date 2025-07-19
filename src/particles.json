@@ -1,6 +1,6 @@
 {
     "background": {
-        "color": "#282c34"
+        "color": "transparent"
     },
     "interactivity": {
         "events": {
@@ -44,14 +44,14 @@
                 "default": "bounce"
             },
             "random": false,
-            "speed": 7,
+            "speed": 6,
             "straight": false
         },
         "number": {
             "density": {
-                "enable": true
+                "enable": false
             },
-            "value": 30
+            "value": 25
         },
         "opacity": {
             "value": 0.5
@@ -61,7 +61,7 @@
         },
         "size": {
             "random": true,
-            "value": 1
+            "value": 2
         }
     }
 }

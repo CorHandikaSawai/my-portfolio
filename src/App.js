@@ -1,13 +1,16 @@
-import { useCallback, useEffect, useState } from 'react';
-import './App.css';
-import About from './components/About';
-import Header from './components/Header';
-import Projects from './components/Projects';
+import Header from './components/Header/Header';
+import HeroSection from './components/HeroSection/HeroSection';
+import { useState, useEffect } from 'react';
+import ProjectsSection from './components/ProjectsSection/ProjectsSection';
+import CertificationsSection from './components/CertificationsSection/CertificationsSection';
+import ContactSection from './components/ContactSection/ContactSection';
 import { loadFull } from 'tsparticles';
 import particlesOptions from './particles.json';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
+import styles from './App.module.css';
+import Footer from './components/Footer/Footer';
 
-function App() {
+const App = () => {
     const [init, setInit] = useState(false);
 
     useEffect(() => {
@@ -23,15 +26,20 @@ function App() {
     }, []);
 
     return (
-        <>
-            {init && <Particles options={particlesOptions} />}
+        <div className={styles.app}>
+            {init && (
+                <Particles id={styles.tsparticles} options={particlesOptions} />
+            )}
             <Header />
-            <main id='main-content'>
-                <About />
-                <Projects />
+            <main>
+                <HeroSection />
+                <ProjectsSection />
+                <CertificationsSection />
+                {/* <ContactSection /> */}
             </main>
-        </>
+            <Footer />
+        </div>
     );
-}
+};
 
 export default App;
