@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.d8584e14.css",
-    "main.js": "/my-portfolio/static/js/main.83a385a8.js",
+    "main.css": "/my-portfolio/static/css/main.730b4464.css",
+    "main.js": "/my-portfolio/static/js/main.1cda1612.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/leonCasino.gif": "/my-portfolio/static/media/leonCasino.e6b471751030751cb22b.gif",
     "static/media/ticTacToeDemo.gif": "/my-portfolio/static/media/ticTacToeDemo.f022e8f0923cc4a10e2e.gif",
     "static/media/agilePokerDemo.webp": "/my-portfolio/static/media/agilePokerDemo.e73cbe9da2c89f576cd3.webp",
-    "static/media/profile.png": "/my-portfolio/static/media/profile.fa26d3078cb385ee7eb8.png",
     "static/media/matchManiaDemo.gif": "/my-portfolio/static/media/matchManiaDemo.bf79ffe382d6dcabbbc7.gif",
     "static/media/qCardsDemo.gif": "/my-portfolio/static/media/qCardsDemo.0e3d8723922334ee182a.gif",
+    "static/media/profile.webp": "/my-portfolio/static/media/profile.5cbe7aec2f83d701516b.webp",
     "index.html": "/my-portfolio/index.html",
-    "main.d8584e14.css.map": "/my-portfolio/static/css/main.d8584e14.css.map",
-    "main.83a385a8.js.map": "/my-portfolio/static/js/main.83a385a8.js.map",
+    "main.730b4464.css.map": "/my-portfolio/static/css/main.730b4464.css.map",
+    "main.1cda1612.js.map": "/my-portfolio/static/js/main.1cda1612.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8584e14.css",
-    "static/js/main.83a385a8.js"
+    "static/css/main.730b4464.css",
+    "static/js/main.1cda1612.js"
   ]
 }
